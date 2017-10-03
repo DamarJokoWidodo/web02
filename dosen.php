@@ -20,7 +20,7 @@ $hasil = mysqli_query($koneksi, $query);
 	</thead>
 <tbody>
 	<?php
-	while($row = mysqli_fetch_assoc($hasil)){
+	while($row = mysqli_fetch_assoc('$hasil')){
 		?>
 		<tr>
 			<td><?php echo $row['id']; ?></td>
